@@ -1,4 +1,4 @@
-*.py[co]
+*.py[co~]
 
 # Packages
 *.egg
@@ -25,3 +25,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#emacs backup files
+*~
