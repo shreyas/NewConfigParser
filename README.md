@@ -20,7 +20,7 @@ Blog: http://pyarabola.blogspot.in
 
 Examples
 ========
-
+'''
 shreyas@tochukasui:~/devel/python$ cat config.ini
 [server]
 host = blogspot
@@ -71,11 +71,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> newparser.get("server", "website");
 'pyarabola.blogspot.in'
 >>> 
-
+'''
 
 Circular Dependancy Detection 
 ============================
-
+'''
 shreyas@tochukasui:~/devel/python$ cat circdep.ini
 [humans]
 drinking_water = ${govt.pipeline}
@@ -96,7 +96,8 @@ clouds = ${vapor}
 vapor = ${natural.reservoire}
 </quote>
 </div>
-
+'''
+'''python
 shreyas@tochukasui:~/devel/python$ cat cdep.py
 #!/usr/bin/python
 
@@ -109,11 +110,9 @@ try:
     p.get("humans", "drinking_water")
 except Exception as e:
     print e
-</quote>
-</div>
-<quote>
+
 shreyas@tochukasui:~/devel/python$ ./cdep.py
 Cicrular dependancy detected while resolving parameter 'natural.reservoire': natural.reservoire -> natural.river -> heavens.rains -> heavens.clouds -> heavens.vapor -> natural.reservoire
 shreyas@tochukasui:~/devel/python$ 
-
+'''
 
