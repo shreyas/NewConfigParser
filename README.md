@@ -15,7 +15,7 @@ Extends the ConfigParser.SafeConfigParser class from python standard library, fo
 More Info
 =========
 
-Blog: http://pyarabola.blogspot.in
+Blog: http://pyarabola.blogspot.com/2012/08/a-newconfigparse-module-for-python.html
 
 
 Examples
